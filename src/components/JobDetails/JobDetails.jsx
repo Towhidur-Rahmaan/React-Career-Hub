@@ -7,19 +7,28 @@ import { saveJobApplication } from '../../utility/localstorage';
 const JobDetails = () => {
     const jobs = useLoaderData();
     const { id } = useParams();
-    const job = jobs.find(job => job.id === parseInt(id));
+    const idInt = parseInt(id);
+    const job = jobs.find(job => job.id === parseInt(idInt));
     console.log(job);
 
     const handleApplyJob = () => {
-        saveJobApplication(id)
+        saveJobApplication(idInt)
         toast('Applied Successfully!');
     }
     return (
         <div>
             
-            <div className='grid gap-4 md:grid-cols-4'>
+            <div>
+                <div className='flex justify-between bg-violet-100'>
+                        <img src="/src/assets/images/bg1.png" alt="" />
+                        <p className='text-black text-2xl font-bold mt-20'>Job Details</p>
+                        <img src="/src/assets/images/bg2.png" alt="" />
+                        
+                    </div>
+            </div>
+
+            <div className='grid gap-4 md:grid-cols-4 mt-8'>
                 <div className='border md:col-span-3'>
-                    <h2 className="text-4xl">Details coming soon</h2>
                     <h2>Job Details of:{job.job_title}</h2>
                     <p>{job.company_name}</p>
                     <p>{job.job_description}</p>

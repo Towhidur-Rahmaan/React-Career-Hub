@@ -23,7 +23,7 @@ const Job = ({ job }) => {
         <div className="card-body font-bold ">
           <h2 className="card-title">{job_title}</h2>
           <p>{company_name}</p>
-          <div className="">
+          <div className="mb-4">
             <button className="px-5 py-2 font-bold border rounded border-purple-800 mr-4 text-purple-500">
                 {remote_or_onsite}
             </button>
@@ -31,10 +31,10 @@ const Job = ({ job }) => {
                 {job_type}
             </button>
             <div className="flex ">
-                <h2 className="flex mr-2"><IoLocationOutline className="text-2xl"/>{location}</h2>
+                <h2 className="flex mr-2 mt-4"><IoLocationOutline className="text-2xl"/>{location}</h2>
                 
                 
-                    <h2 className="flex"><AiOutlineDollarCircle className="text-2xl " />{salary}</h2>
+                    <h2 className="flex mt-4"><AiOutlineDollarCircle className="text-2xl " />{salary}</h2>
                 
                 
             </div>

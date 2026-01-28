@@ -11,8 +11,8 @@ const FeaturedJobs = () => {
     },[])
     return (
         <div>
-            <div className="text-center">
-                <h2 className="text-5xl">Featured jobs : {jobs.length}</h2>
+            <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold mt-16 ">Featured jobs </h2>
                 <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
@@ -21,10 +21,10 @@ const FeaturedJobs = () => {
                 jobs.slice(0,dataLength).map( job => <Job key={job.id} job={job}></Job>)
                 }
             </div>
-            <div className={dataLength === jobs.length && 'hidden'}>
+            <div className={`${dataLength === jobs.length ? 'hidden' : ''} flex justify-center mt-8 mb-20`}>
                 <button 
                 onClick={()=> setDataLength(jobs.length)}
-                className="btn btn-primary">Show all jobs</button>
+                className="btn btn-primary justify-center ">Show all jobs</button>
             </div>
         </div>
     );
