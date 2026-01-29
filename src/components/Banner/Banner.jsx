@@ -9,7 +9,7 @@ const Banner = () => {
             <button className='btn btn-primary '>Get Started</button>
             </div>
             <div className='w-1/2'>
-                <img src="/src/assets/images/user.png" alt="banner" />
+                <img src="/assets/images/user.png" alt="banner" />
             </div>
         </div>
     );

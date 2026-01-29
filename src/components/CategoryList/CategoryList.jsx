@@ -13,8 +13,8 @@ const CategoryList = () => {
         <div className="card bg-base-100  shadow-2xl">
           <figure className="justify-start ml-6">
             <img className="w-10"
-              src="/src/assets/icons/accounts.png"
-              alt="Shoes"
+              src="/assets/icons/accounts.png"
+              alt="Job1"
             />
           </figure>
           <div className="card-body">
@@ -27,8 +27,8 @@ const CategoryList = () => {
         <div className="card bg-base-100 shadow-2xl">
           <figure className="justify-start ml-6">
             <img
-              src="/src/assets/icons/creative.png"
-              alt="Shoes"
+              src="/assets/icons/creative.png"
+              alt="Job2"
             />
           </figure>
           <div className="card-body">
@@ -41,8 +41,8 @@ const CategoryList = () => {
         <div className="card bg-base-100 shadow-2xl">
           <figure className="justify-start ml-6">
             <img
-              src="/src/assets/icons/marketing.png"
-              alt="Shoes"
+              src="/assets/icons/marketing.png"
+              alt="Job3"
             />
           </figure>
           <div className="card-body">
@@ -55,8 +55,8 @@ const CategoryList = () => {
         <div className="card bg-base-100 shadow-2xl">
           <figure className="justify-start ml-6">
             <img
-              src="/src/assets/icons/chip.png"
-              alt="Shoes"
+              src="/assets/icons/chip.png"
+              alt="Job4"
             />
           </figure>
           <div className="card-body">
